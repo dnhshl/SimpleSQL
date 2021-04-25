@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleSQL</string>
+    <string name="btn">Hinzufügen</string>
+    <string name="txt1">Raum</string>
+    <string name="txt2">Temperatur</string>
+    <string name="txt3">Luftfeuchte</string>
+    <string name="txt4">Datum YYYY-MM-DD</string>
+    <string name="eingabefehler">Alle Felder ausfüllen</string>
+    <string name="gespeichert">gespeichert</string>
+</resources>
