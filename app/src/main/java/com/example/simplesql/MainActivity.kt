@@ -1,8 +1,11 @@
 package com.example.simplesql
 
+import android.content.Intent
 import android.database.sqlite.SQLiteConstraintException
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -28,6 +31,23 @@ class MainActivity : AppCompatActivity() {
         mWeatherDao = mDb.getWeatherDao()
 
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+            R.id.menu_searchDatabase -> {
+                searchDatabase()
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
 
     fun onClickButton(v: View?) {
 
@@ -56,5 +76,10 @@ class MainActivity : AppCompatActivity() {
         } catch (e: SQLiteConstraintException) {
             Log.e(TAG, "$e no success!")
         }
+    }
+
+    private fun searchDatabase() {
+        val intent = Intent(this, SearchDatabase::class.java)
+        startActivity(intent)
     }
 }

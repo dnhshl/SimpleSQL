@@ -7,4 +7,25 @@
     <string name="txt4">Datum YYYY-MM-DD</string>
     <string name="eingabefehler">Alle Felder ausfüllen</string>
     <string name="gespeichert">gespeichert</string>
+
+    <string name="menu_search">Datenbank durchsuchen</string>
+    <string name="radioRoom">Raum</string>
+    <string name="radioTemp">Temp</string>
+    <string name="radioDate">Datum</string>
+    <string name="radioHot">Wärmste</string>
+    <string name="menu_delete">Löschen</string>
+    <string name="info_text">Wähle einen Suchparameter aus.\nBei Temperatur wird nach allem gesucht, was größer ist.</string>
+    <string name="search_hint">Raum,Temp,YYYY-MM-DD</string>
+    <string name="search">SUCHEN / LÖSCHEN</string>
+
+    <string name="result">result</string>
+    <string name="no_match">Keine Übereinstimmung gefunden.</string>
+    <string name="empty_db">Leere Datenbank/nAchte auf korrekte Schreibweise und ob Zahlen vorhanden sind!</string>
+    <string name="choose_radio">Bitte wähle einen Button aus!</string>
+    <string name="delete_success">Löschen erfolgreich</string>
+    <string name="deleting_info">Wähle einen Eintrag aus, um ihn zu löschen.</string>
+    <string name="value">value</string>
+
+    <string name="fields_empty">Bitte fülle alle Felder aus!</string>
+    <string name="spelling_remind">Achte auf korrekte Schreibweise und ob Zahlen vorhanden sind!</string>
 </resources>
